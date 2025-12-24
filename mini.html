@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>PulseStrap – Modern Roblox Bootstrapper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="wrap">
+	<header>
+		<div class="container navShell">
+			<div class="navPill">
+				<div class="brand">
+					<div class="brandMark" aria-hidden="true"></div>
+					<div class="brandName">PulseStrap</div>
+				</div>
+				<nav aria-label="Primary">
+					<a href="#features">Features</a>
+					<a href="#fastflags">FastFlags</a>
+					<a href="#performance">Performance</a>
+					<a href="#pricing">Pricing</a>
+					<a href="#docs">Docs</a>
+				</nav>
+				<div class="navRight">
+					<button class="iconBtn" aria-label="Account">
+						<div class="iconDot" aria-hidden="true"></div>
+					</button>
+					<button class="cta" id="downloadBtn" type="button">
+						Download
+						<span class="ctaArrow" aria-hidden="true">→</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<main class="container">
+		<section class="hero">
+			<div class="tag floatIn" data-anim>
+				<span class="spark" aria-hidden="true"></span>
+				Blazing Fast • Affordable
+			</div>
+			<h1 class="floatIn" data-anim style="transition-delay:.05s">
+				The Modern<br/>
+				<span class="h1Accent">Roblox Bootstrapper</span>
+			</h1>
+			<p class="sub floatIn" data-anim style="transition-delay:.1s">
+				Experience Roblox like never before with PulseStrap.<br/>
+				Faster launches, custom FastFlags, and complete control.
+			</p>
+			<div class="heroActions floatIn" data-anim style="transition-delay:.15s">
+				<button class="btnPrimary" id="getBtn" type="button">
+					Get PulseStrap
+					<span aria-hidden="true" style="display:inline-grid;place-items:center;width:18px;height:18px;border-radius:999px;background:rgba(0,0,0,.14)">→</span>
+				</button>
+				<button class="btnGhost" type="button" id="learnBtn">Our Discord</button>
+			</div>
+			
+			<div class="showcase floatIn" data-anim style="transition-delay:.2s">
+				<div class="frame">
+					<div class="frameInner">
+						<div class="app">
+							<section class="content" aria-label="Main content">
+								<div class="contentTop">
+									<div class="welcome">
+										<h2>FastFlag Editor</h2>
+										<p>Manage your FastFlags here. Check out more features in Advanced Settings</p>
+									</div>
+									<button class="pillBtn" type="button" id="pillAction">
+										<span class="pillDot" aria-hidden="true"></span>
+										Advanced Settings
+									</button>
+								</div>
+								<div class="cardRow">
+									<div class="ffToolbar">
+										<button class="ffBtn primary" type="button">Add New</button>
+										<button class="ffBtn" type="button">Delete selected</button>
+										<button class="ffBtn" type="button">Delete All</button>
+										<button class="ffBtn" type="button">Copy All</button>
+										<button class="ffBtn" type="button">Export JSON</button>
+										<div style="flex:1"></div>
+										<button class="ffBtn" type="button">Profiles</button>
+									</div>
+									<div class="ffToolbar2">
+										<button class="ffBtnSm" type="button">Clean FastFlag List</button>
+										<button class="ffBtnSm" type="button">Show Preset Flags</button>
+										<div style="flex:1"></div>
+										<span style="color:var(--muted2);font-size:12px;font-weight:600">Total Flags: 0</span>
+									</div>
+									<div class="ffSearch">
+										<input type="text" placeholder="Search" class="searchInput"/>
+									</div>
+									<div class="ffTable">
+										<div class="ffHeader">
+											<div class="ffCol">Name</div>
+											<div class="ffCol">Value</div>
+										</div>
+										<div class="ffEmpty">
+											<div style="font-size:24px;margin-bottom:8px;opacity:.5">📋</div>
+											<div style="color:var(--muted);font-size:13px">No FastFlags configured yet</div>
+											<div style="color:var(--muted2);font-size:12px;margin-top:4px">Click "Add New" to get started</div>
+										</div>
+									</div>
+									<div class="ffFooter">
+										<label style="display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none">
+											<input type="checkbox" style="width:14px;height:14px;cursor:pointer"/>
+											<span style="font-size:12px;color:var(--muted)">Test Mode</span>
+										</label>
+										<div style="flex:1"></div>
+										<button class="ffBtn primary" type="button" style="padding:10px 18px">Save and Launch</button>
+										<button class="ffBtn" type="button">Restart</button>
+										<button class="ffBtn" type="button">Save</button>
+										<button class="ffBtn" type="button">Close</button>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="frameFade"></div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="features" style="padding:80px 0">
+			<div class="sectionTag floatIn" data-anim>Why PulseStrap</div>
+			<h2 class="sectionHead floatIn" data-anim style="transition-delay:.05s">
+				Launch faster, play<br/>
+				<span class="h1Accent">smarter</span>
+			</h2>
+			<p class="sectionSub floatIn" data-anim style="transition-delay:.1s">
+				Built from the ground up to give you complete control over your Roblox experience.<br/>
+				No compromises, no limitations.
+			</p>
+			<div class="featureGrid floatIn" data-anim style="transition-delay:.15s">
+				<div class="featureCard">
+					<div class="featureIcon">
+						<svg viewBox="0 0 24 24">
+							<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+						</svg>
+					</div>
+					<h3>Lightning Fast</h3>
+					<p>Launch Roblox in milliseconds with our optimized bootstrapping engine</p>
+				</div>
+				<div class="featureCard">
+					<div class="featureIcon">
+						<svg viewBox="0 0 24 24">
+							<circle cx="12" cy="12" r="3"/>
+							<circle cx="12" cy="12" r="8"/>
+							<line x1="12" y1="2" x2="12" y2="4"/>
+							<line x1="12" y1="20" x2="12" y2="22"/>
+							<line x1="4.93" y1="4.93" x2="6.34" y2="6.34"/>
+							<line x1="17.66" y1="17.66" x2="19.07" y2="19.07"/>
+							<line x1="2" y1="12" x2="4" y2="12"/>
+							<line x1="20" y1="12" x2="22" y2="12"/>
+							<line x1="4.93" y1="19.07" x2="6.34" y2="17.66"/>
+							<line x1="17.66" y1="6.34" x2="19.07" y2="4.93"/>
+						</svg>
+					</div>
+					<h3>FastFlag Control</h3>
+					<p>Full access to Roblox FastFlags with an intuitive editor interface</p>
+				</div>
+				<div class="featureCard">
+					<div class="featureIcon">
+						<svg viewBox="0 0 24 24">
+							<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+						</svg>
+					</div>
+					<h3>Mod Support</h3>
+					<p>Seamlessly integrate mods and custom content into your game</p>
+				</div>
+				<div class="featureCard">
+					<div class="featureIcon">
+						<svg viewBox="0 0 24 24">
+							<line x1="18" y1="20" x2="18" y2="10"/>
+							<line x1="12" y1="20" x2="12" y2="4"/>
+							<line x1="6" y1="20" x2="6" y2="14"/>
+						</svg>
+					</div>
+					<h3>Performance Metrics</h3>
+					<p>Real-time monitoring of FPS, memory usage, and network stats</p>
+				</div>
+				<div class="featureCard">
+					<div class="featureIcon">
+						<svg viewBox="0 0 24 24">
+							<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+						</svg>
+					</div>
+					<h3>Custom Themes</h3>
+					<p>Personalize your Roblox interface with custom color schemes</p>
+				</div>
+				<div class="featureCard">
+					<div class="featureIcon">
+						<svg viewBox="0 0 24 24">
+							<rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+							<path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+						</svg>
+					</div>
+					<h3>Secure & Safe</h3>
+					<p>Open source and auditable - your security is our priority</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="fastflags" style="padding:80px 0">
+			<div class="twoCol floatIn" data-anim>
+				<div class="colText">
+					<div class="sectionTag">FastFlags Unleashed</div>
+					<h2 class="sectionHead" style="text-align:left;margin-top:14px">
+						Customize Roblox<br/>
+						<span class="h1Accent">your way</span>
+					</h2>
+					<p class="colPara">
+						FastFlags are Roblox's internal configuration system. With PulseStrap, you get direct access to hundreds of flags that control everything from graphics to networking.
+					</p>
+					<ul class="checkList">
+						<li>Enable experimental features early</li>
+						<li>Optimize graphics for your hardware</li>
+						<li>Tweak network settings for better ping</li>
+						<li>Unlock hidden debug tools</li>
+						<li>Save and share flag profiles</li>
+					</ul>
+					<button class="btnPrimary" type="button" style="margin-top:20px">
+						Explore Flags
+						<span aria-hidden="true" style="display:inline-grid;place-items:center;width:18px;height:18px;border-radius:999px;background:rgba(0,0,0,.14)">→</span>
+					</button>
+				</div>
+				<div class="colImg">
+					<div class="mockup">
+						<div class="mockupHeader">
+							<div class="mockupDots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="mockupTitle">FastFlag Profiles</div>
+						</div>
+						<div class="mockupContent">
+							<div class="profileItem">
+								<div class="profileIcon">🎮</div>
+								<div>
+									<div class="profileName">Gaming Optimized</div>
+									<div class="profileDesc">Max FPS, minimal input lag</div>
+								</div>
+							</div>
+							<div class="profileItem">
+								<div class="profileIcon">🎨</div>
+								<div>
+									<div class="profileName">Visual Quality</div>
+									<div class="profileDesc">Enhanced graphics & shadows</div>
+								</div>
+							</div>
+							<div class="profileItem">
+								<div class="profileIcon">📶</div>
+								<div>
+									<div class="profileName">Low Bandwidth</div>
+									<div class="profileDesc">Optimized for slow connections</div>
+								</div>
+							</div>
+							<div class="profileItem">
+								<div class="profileIcon">🔬</div>
+								<div>
+									<div class="profileName">Developer Mode</div>
+									<div class="profileDesc">Debug tools & console access</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="performance" style="padding:80px 0">
+			<div class="twoCol floatIn" data-anim style="flex-direction:row-reverse">
+				<div class="colText">
+					<div class="sectionTag">Performance First</div>
+					<h2 class="sectionHead" style="text-align:left;margin-top:14px">
+						Built for<br/>
+						<span class="h1Accent">speed</span>
+					</h2>
+					<p class="colPara">
+						PulseStrap is engineered from the ground up for maximum performance. Every millisecond counts when you're launching into your favorite games.
+					</p>
+					<div class="statGrid">
+						<div class="miniStat">
+							<div class="miniStatVal">~200ms</div>
+							<div class="miniStatLabel">Average Launch Time</div>
+						</div>
+						<div class="miniStat">
+							<div class="miniStatVal">&lt; 50MB</div>
+							<div class="miniStatLabel">Memory Footprint</div>
+						</div>
+						<div class="miniStat">
+							<div class="miniStatVal">~0%</div>
+							<div class="miniStatLabel">CPU Usage (Idle)</div>
+						</div>
+					</div>
+				</div>
+				<div class="colImg">
+					<div class="mockup">
+						<div class="mockupHeader">
+							<div class="mockupDots">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="mockupTitle">Performance Monitor</div>
+						</div>
+						<div class="mockupContent" style="padding:20px">
+							<div class="perfMetric">
+								<div class="perfLabel">FPS</div>
+								<div class="perfBar">
+									<div class="perfFill" style="width:92%"></div>
+								</div>
+								<div class="perfValue">144</div>
+							</div>
+							<div class="perfMetric">
+								<div class="perfLabel">Memory</div>
+								<div class="perfBar">
+									<div class="perfFill" style="width:65%;background:linear-gradient(90deg, #3b82f6, #2563eb)"></div>
+								</div>
+								<div class="perfValue">2.1 GB</div>
+							</div>
+							<div class="perfMetric">
+								<div class="perfLabel">Ping</div>
+								<div class="perfBar">
+									<div class="perfFill" style="width:15%;background:linear-gradient(90deg, #10b981, #059669)"></div>
+								</div>
+								<div class="perfValue">23ms</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="pricing" style="padding:80px 0">
+			<div class="sectionTag floatIn" data-anim>Pricing</div>
+			<h2 class="sectionHead floatIn" data-anim style="transition-delay:.05s">
+				Simple, transparent<br/>
+				<span class="h1Accent">pricing</span>
+			</h2>
+			<p class="sectionSub floatIn" data-anim style="transition-delay:.1s">
+				One-time purchase. No subscriptions, no hidden fees.<br/>
+				Lifetime access to all features and updates.
+			</p>
+			<div style="max-width:480px;margin:48px auto 0">
+				<div class="featureCard floatIn" data-anim style="transition-delay:.15s;padding:32px;text-align:center;border-color:rgba(251,191,36,.25)">
+					<div style="font-size:14px;font-weight:800;color:var(--accent);margin-bottom:12px">LIFETIME LICENSE</div>
+					<div style="display:flex;align-items:baseline;justify-content:center;gap:8px;margin-bottom:20px">
+						<span style="font-size:52px;font-weight:900;letter-spacing:-2px;line-height:1">$10</span>
+						<span style="font-size:16px;color:var(--muted)">USD</span>
+					</div>
+					<ul class="checkList" style="text-align:left;margin:24px 0">
+						<li>Full FastFlag Editor access</li>
+						<li>Advanced mod support</li>
+						<li>Performance monitoring tools</li>
+						<li>Custom theme engine</li>
+						<li>Priority support & updates</li>
+						<li>All future features included</li>
+					</ul>
+					<button class="btnPrimary" type="button" style="width:100%;padding:14px 20px;font-size:14px;margin-top:24px;justify-content:center">
+						Buy Now
+						<span aria-hidden="true" style="display:inline-grid;place-items:center;width:18px;height:18px;border-radius:999px;background:rgba(0,0,0,.14)">→</span>
+					</button>
+					<p style="margin-top:14px;font-size:11px;color:var(--muted2)">
+						Secure payment via Stripe • 30-day money-back guarantee
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="docs" style="padding:100px 0 60px">
+			<div class="ctaBox floatIn" data-anim>
+				<div class="sectionTag" style="margin:0 auto 18px">Get Started Today</div>
+				<h2 class="sectionHead">
+					Ready to level up<br/>
+					<span class="h1Accent">your Roblox?</span>
+				</h2>
+				<p class="sectionSub" style="margin-top:14px">
+					Join thousands of players already using PulseStrap.<br/>
+					Purchase now and experience the difference.
+				</p>
+				<div style="display:flex;gap:12px;justify-content:center;margin-top:28px;flex-wrap:wrap">
+					<button class="btnPrimary" type="button" style="padding:12px 20px;font-size:14px">
+						Purchase PulseStrap
+						<span aria-hidden="true" style="display:inline-grid;place-items:center;width:18px;height:18px;border-radius:999px;background:rgba(0,0,0,.14)">→</span>
+					</button>
+					<button class="btnGhost" type="button" style="padding:12px 20px;font-size:14px">
+						View Documentation
+					</button>
+				</div>
+				<p style="margin-top:18px;font-size:12px;color:var(--muted2)">
+					Windows only • macOS and Linux versions coming soon
+				</p>
+			</div>
+		</section>
+		
+		<footer style="padding:40px 0;border-top:1px solid var(--line);margin-top:40px">
+			<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
+				<div class="brand">
+					<div class="brandMark" aria-hidden="true"></div>
+					<div class="brandName">PulseStrap</div>
+				</div>
+				<div style="display:flex;gap:24px;color:var(--muted);font-size:13px">
+					<a href="#" style="color:inherit;text-decoration:none">GitHub</a>
+					<a href="#" style="color:inherit;text-decoration:none">Discord</a>
+					<a href="#" style="color:inherit;text-decoration:none">Documentation</a>
+					<a href="#" style="color:inherit;text-decoration:none">License</a>
+				</div>
+			</div>
+			<p style="margin-top:20px;font-size:12px;color:var(--muted2);text-align:center">
+				© 2024 PulseStrap. Open source under MIT License. Not affiliated with Roblox Corporation.
+			</p>
+		</footer>
+	</main>
+	
+	<button class="chatFab" type="button" id="chatFab" aria-label="Chat">
+		<div class="chatBubble" aria-hidden="true"></div>
+	</button>
+</div>
+
+<script>
+let ticking = false;
+window.addEventListener('scroll', () => {
+	if (!ticking) {
+		window.requestAnimationFrame(() => {
+			document.documentElement.style.setProperty('--scroll', window.pageYOffset);
+			ticking = false;
+		});
+		ticking = true;
+	}
+}, {passive: true});
+
+(function() {
+	const els = Array.from(document.querySelectorAll("[data-anim]"));
+	const sections = Array.from(document.querySelectorAll("section"));
+	const io = new IntersectionObserver((entries) => {
+		entries.forEach(e => {
+			if (e.isIntersecting) {
+				e.target.classList.add("in");
+			}
+		});
+	}, {threshold: 0.05, rootMargin: "0px 0px -100px 0px"});
+	
+	const sectionIO = new IntersectionObserver((entries) => {
+		entries.forEach(e => {
+			if (e.isIntersecting) {
+				e.target.classList.add("visible");
+			}
+		});
+	}, {threshold: 0.08, rootMargin: "0px 0px -80px 0px"});
+	
+	els.forEach(el => {
+		el.classList.add("floatIn");
+		io.observe(el);
+	});
+	sections.forEach(sec => {
+		sectionIO.observe(sec);
+	});
+})();
+
+const scrollToShowcase = () => {
+	const el = document.querySelector(".showcase");
+	if (el) el.scrollIntoView({behavior: "smooth", block: "center"});
+};
+
+document.getElementById("getBtn").addEventListener("click", scrollToShowcase);
+document.getElementById("downloadBtn").addEventListener("click", () => alert("Download link would go here - point to your GitHub releases!"));
+document.getElementById("learnBtn").addEventListener("click", () => window.open("https://github.com/yourusername/pulsestrap", "_blank"));
+document.getElementById("pillAction").addEventListener("click", () => alert("Advanced Settings clicked."));
+document.getElementById("chatFab").addEventListener("click", () => window.open("https://discord.gg/yourserver", "_blank"));
+
+(function() {
+	const hero = document.querySelector(".hero");
+	if (!hero) return;
+	let raf = null;
+	window.addEventListener("mousemove", (e) => {
+		if (raf) return;
+		raf = requestAnimationFrame(() => {
+			raf = null;
+			const x = (e.clientX / window.innerWidth) * 100;
+			const y = (e.clientY / window.innerHeight) * 100;
+			document.documentElement.style.setProperty("--mx", x.toFixed(2) + "%");
+			document.documentElement.style.setProperty("--my", y.toFixed(2) + "%");
+		});
+	}, {passive: true});
+})();
+</script>
+</body>
+</html>
