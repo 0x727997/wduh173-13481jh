@@ -490,10 +490,18 @@ const scrollToShowcase = () => {
 	if (el) el.scrollIntoView({behavior: "smooth", block: "center"});
 };
 
-document.getElementById("getBtn").addEventListener("click", scrollToShowcase);
-document.getElementById("learnBtn").addEventListener("click", () => window.open("https://github.com/yourusername/pulsestrap", "_blank"));
+const scrollToPricing = () => {
+	const el = document.getElementById("pricing");
+	if (el) el.scrollIntoView({behavior: "smooth", block: "start"});
+};
+
+document.getElementById("getBtn").addEventListener("click", scrollToPricing);
+document.getElementById("downloadBtn").addEventListener("click", scrollToPricing);
+document.getElementById("buyNowBtn").addEventListener("click", () => window.open("https://pulsestrapper.mysellauth.com/", "_blank"));
+document.getElementById("purchasePulseBtn").addEventListener("click", scrollToPricing);
+document.getElementById("learnBtn").addEventListener("click", () => window.open("https://discord.gg/usMRHaThJD", "_blank"));
 document.getElementById("pillAction").addEventListener("click", () => alert("Advanced Settings clicked."));
-document.getElementById("chatFab").addEventListener("click", () => window.open("https://discord.gg/yourserver", "_blank"));
+document.getElementById("chatFab").addEventListener("click", () => window.open("https://discord.gg/usMRHaThJD", "_blank"));
 
 (function() {
 	const hero = document.querySelector(".hero");
@@ -513,5 +521,6 @@ document.getElementById("chatFab").addEventListener("click", () => window.open("
 </script>
 </body>
 </html>
+
 
 
